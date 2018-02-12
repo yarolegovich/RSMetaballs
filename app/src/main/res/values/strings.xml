@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">metaballs</string>
+
+    <string name="anim_state_running">Tap the screen to pause</string>
+    <string name="anim_state_paused">Tap the screen to resume</string>
+    <string name="options_btn_generate_balls">Generate random balls</string>
+    <string name="options_title_ball_count">Ball count (affects newly generated set of balls)</string>
+    <string name="options_title_color_blue">Ball color (blue)</string>
+    <string name="options_title_color_green">Ball color (green)</string>
+    <string name="options_title_color_red">Ball color (red)</string>
+    <string name="options_title_quality">Quality</string>
+    <string name="options_title_enable_glow">Enable glow</string>
+    <string name="options_panel_toggle_description">Toggle options panel</string>
+    <string name="btn_render_to_canvas">Render to a canvas</string>
+    <string name="btn_render_to_surface">Render to a surface</string>
+
+</resources>

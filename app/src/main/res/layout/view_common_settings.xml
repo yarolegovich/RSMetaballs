@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.LinearLayout"
+    tools:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_glow_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            style="@style/OptionTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="@string/options_title_enable_glow"
+            android:textSize="14sp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_glow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/options_margin_horiz"
+            android:layout_marginRight="@dimen/options_margin_horiz"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/OptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options_title_color_red"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_red_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="33"/>
+
+    <TextView
+        style="@style/OptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options_title_color_green"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_green_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="150"/>
+
+    <TextView
+        style="@style/OptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options_title_color_blue"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_blue_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="243"/>
+
+    <TextView
+        style="@style/OptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/options_title_ball_count"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_ball_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7"
+        android:progress="3"/>
+
+    <Button
+        android:id="@+id/btn_generate_balls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/options_margin_horiz"
+        android:layout_marginRight="@dimen/options_margin_horiz"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="@string/options_btn_generate_balls"
+        android:textColor="@android:color/white"/>
+
+</merge>

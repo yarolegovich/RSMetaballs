@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_options_toggle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/optionsBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp">
+
+    <ImageView
+        android:id="@+id/iv_options_toggle_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/options_panel_toggle_description"
+        android:scaleType="centerInside"
+        android:src="@drawable/vic_arrow_down"/>
+</FrameLayout>

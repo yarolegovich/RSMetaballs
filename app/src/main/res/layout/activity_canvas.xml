@@ -1,0 +1,55 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetaballCanvasTargetActivity">
+
+    <View
+        android:id="@id/metaball_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/view_animation_state"/>
+
+    <LinearLayout
+        android:id="@+id/options_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_options_panel_toggle"/>
+
+        <ScrollView
+            android:id="@+id/options_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/optionsBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/OptionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/options_title_quality"/>
+
+                <SeekBar
+                    android:id="@+id/seek_bar_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="9"
+                    android:progress="8"/>
+
+                <include layout="@layout/view_common_settings"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

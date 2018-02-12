@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="metaball_view" type="id"/>
+
+    <item name="request_update_color" type="id"/>
+    <item name="request_update_glow_mode" type="id"/>
+    <item name="request_update_quality" type="id"/>
+    <item name="request_update_ball_radii" type="id"/>
+    <item name="request_update_balls" type="id"/>
+    <item name="request_update_size" type="id"/>
+</resources>
